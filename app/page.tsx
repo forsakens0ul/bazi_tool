@@ -72,9 +72,9 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50">
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">八字知识交互组件库</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">命理知识交互组件库</h1>
           <p className="text-xl text-gray-600 mb-2">概念可视化词典 + 交互式学习工具</p>
-          <p className="text-gray-500">帮助理解、记忆和演练八字核心难点知识</p>
+          <p className="text-gray-500">帮助理解、记忆和演练命理核心难点知识</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
