@@ -106,12 +106,9 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50">
       <div className="container mx-auto px-4 py-8 w-full" >
-       
           <h1 className="text-4xl font-bold text-gray-900 mb-4 w-full">命理知识交互组件库</h1>
           <p className="text-xl text-gray-600 mb-2 w-full ">概念可视化词典 + 交互式学习工具</p>
           <p className="text-gray-500 w-full "> 选择你感兴趣的模块，开始探索吧！</p>
-        
-
         {/* Version Info and Social Links */}
         <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/20 max-w-md mx-auto mb-12">
           <div className="text-sm text-gray-600 mb-3">
