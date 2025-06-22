@@ -113,8 +113,8 @@ export default function HomePage() {
         </div>
         {/* Version Info and Social Links */}
         <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-sm border border-white/20 max-w-md mx-auto mb-12">
-          <div className="text-sm text-gray-600 mb-3">
-            当前版本 v1.0.0（{getCurrentDate()}）
+          <div className="text-sm text-gray-600 mb-3 text-center">
+            当前版本 v1.0.1（{getCurrentDate()}）
           </div>
           <div className="flex items-center justify-center gap-6 text-sm">
             <a 
