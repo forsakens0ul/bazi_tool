@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
-import { BookOpen, Zap, Target, Compass, Star, Calculator, Clock, Github, Globe, MessageCircle } from "lucide-react"
+import { BookOpen, Zap, Target, Compass, Star, Calculator, Clock, Github, Globe, MessageCircle, Scroll } from "lucide-react"
 
 const modules = [
   {
@@ -66,6 +66,15 @@ const modules = [
     difficulty: "进阶",
     components: ["大运排布图", "流年影响分析", "综合推演系统"],
     href: "/liulian",
+  },
+  {
+    id: "gujidui",
+    title: "古籍对照",
+    description: "经典古籍关键词对照，原文白话现代术语",
+    icon: Scroll,
+    difficulty: "高阶",
+    components: ["古籍关键词搜索", "现代用语对照", "原文案例解析"],
+    href: "/gujidui",
   },
 ]
 
