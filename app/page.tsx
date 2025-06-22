@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
-import { BookOpen, Zap, Target, Compass, Star, Calculator } from "lucide-react"
+import { BookOpen, Zap, Target, Compass, Star, Calculator, Clock } from "lucide-react"
 
 const modules = [
   {
@@ -57,6 +57,15 @@ const modules = [
     difficulty: "实践",
     components: ["手动排八字模块", "命盘结构分析图", "断语训练系统"],
     href: "/paipan",
+  },
+  {
+    id: "liulian",
+    title: "流年与大运推演",
+    description: "时间维度把握命运走势，预测关键年份",
+    icon: Clock,
+    difficulty: "进阶",
+    components: ["大运排布图", "流年影响分析", "综合推演系统"],
+    href: "/liulian",
   },
 ]
 
