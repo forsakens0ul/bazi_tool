@@ -76,6 +76,15 @@ const modules = [
     components: ["古籍关键词搜索", "现代用语对照", "原文案例解析"],
     href: "/gujidui",
   },
+  {
+    id: "paipan-advanced",
+    title: "排盘进阶",
+    description: "藏干、副星、星运、纳音、宫位与六亲分析",
+    icon: Target,
+    difficulty: "高阶",
+    components: ["藏干演示系统", "副星关系图谱", "星运三元流转", "纳音五行全图解", "智能四柱解构"],
+    href: "/paipan-advanced",
+  },
 ]
 
 const difficultyColors = {
