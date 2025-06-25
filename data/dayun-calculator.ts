@@ -7,6 +7,13 @@ import jieqiDatabase, {
   getPrevMonthChangeJieqi,
   JieqiDataYear,
 } from "./jieqi-data";
+import {
+  calculateBazi,
+  getYearColumn,
+  getMonthColumn,
+  getDayColumn,
+  getHourColumn,
+} from "../components/sizhu";
 
 // 类型定义
 export interface BirthInfo {
@@ -53,11 +60,11 @@ export function getDayunDirection(
   const yangGan = "甲丙戊庚壬";
   const isYangYear = yangGan.includes(yearGan);
 
-  // 阳年男逆排，阴年男顺排，阳年女顺排，阴年女逆排
+  // 阳年男顺排，阴年男逆排，阳年女逆排，阴年女顺排
   if ((isYangYear && gender === "男") || (!isYangYear && gender === "女")) {
-    return "reverse"; // 逆排
-  } else {
     return "forward"; // 顺排
+  } else {
+    return "reverse"; // 逆排
   }
 }
 
@@ -141,12 +148,17 @@ export function generateDayunColumns(
 // 计算大运信息
 export function calculateDayunInfo(
   birthInfo: BirthInfo,
-  bazi: string,
-  dayMaster: string,
-  monthColumn: string
+  dayMaster: string
 ): DayunInfo[] {
   const { year, month, day, hour, gender } = birthInfo;
-  const yearGan = bazi.substring(0, 1);
+
+  // 使用sizhu组件计算完整八字
+  const bazi = calculateBazi(year, month, day, hour);
+  const columns = bazi.split(" ");
+  const yearGan = columns[0][0];
+
+  // 月柱取自八字计算结果
+  const calculatedMonthColumn = columns[1];
 
   // 判断大运顺逆
   const direction = getDayunDirection(gender, yearGan);
@@ -159,7 +171,7 @@ export function calculateDayunInfo(
   );
 
   // 生成大运干支序列
-  const dayunColumns = generateDayunColumns(monthColumn, direction);
+  const dayunColumns = generateDayunColumns(calculatedMonthColumn, direction);
 
   // 生成大运信息
   const dayunInfo: DayunInfo[] = [];
@@ -544,12 +556,7 @@ export function testDayunCalculation(customCase?: {
   // 计算大运
   const dayunBirthInfo: BirthInfo = test1 as BirthInfo;
   const monthColumn = monthGan + monthZhi;
-  const dayunInfo = calculateDayunInfo(
-    dayunBirthInfo,
-    bazi,
-    dayGan,
-    monthColumn
-  );
+  const dayunInfo = calculateDayunInfo(dayunBirthInfo, dayGan);
 
   console.log(
     `测试案例: ${test1.year}-${test1.month}-${test1.day} ${test1.gender}:`
