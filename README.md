@@ -1,30 +1,65 @@
-# 八字组件
+# 🎴 交互式八字命理学习工具
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+## 🐮 你是否对八字命理感兴趣？
+- 被繁复的古籍和晦涩的术语劝退？（我一个读尤利西斯的人都觉得阅读困难）
+- 想系统地学习《三命通会》《滴天髓》《渊海子平》《神峰通考》但苦于没有清晰路径？
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/zzs-projects-c4208bf1/v0-)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/q54BT768zbd)
+**解决方案**：零门槛上手、交互可视化学习的现代八字工具组件  
+👉 [🔗 在线地址](https://bazi.chalice.lol/)
 
-## Overview
+## 😄 效果展示
+![image](https://github.com/user-attachments/assets/47ffadcb-a0a6-442e-8be2-d3a55ce8fa82)
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
 
-## Deployment
+## ✨ 我们做了什么？
 
-Your project is live at:
+### 📚 模块化知识体系
+六大功能模块：
 
-**[https://vercel.com/zzs-projects-c4208bf1/v0-](https://vercel.com/zzs-projects-c4208bf1/v0-)**
+| 模块               | 功能亮点                          |
+|--------------------|----------------------------------|
+| 五行、干支、六十甲子 | 可视化展开图，动态表格            |
+| 十神系统           | 词典 + 练习器 + 象义图            |
+| 格局与用神         | 八格归类表 + 流通动图             |
+| 生克制化           | 气机流转图谱，动中看命            |
+| 神煞与杂曜         | 命例对照、不再混乱                |
+| 排盘与演练         | 在线排盘 + 命例讲解 + 自主练习     |
 
-## Build your app
+### 💡 用法示意
+- **点击即学**：点开任一模块互动学习
+- **悬停解析**：鼠标悬停术语自动弹出词典
+- **深度探索**：点击图表节点查看详细讲解
+- **实战演练**：从"看懂"走向"会用"
 
-Continue building your app on:
+## 📌 设计原则
+- 🧘 **极简专注**：无需帐号，打开即学
+- 📖 **原味呈现**：还原古籍风貌，优化体验
+- 🧩 **可视化交互**：从文字堆砌到动图引导
+- 🌱 **渐进学习**：新手到高阶的平滑过渡
 
-**[https://v0.dev/chat/projects/q54BT768zbd](https://v0.dev/chat/projects/q54BT768zbd)**
+## 👋 需要你的反馈！
+**测试版入口**：[🔗 网站地址](https://bazi.chalice.lol/)  
+**反馈渠道**：
+- 文章下方留言
+- 微信后台私信
 
-## How It Works
+## 🧭 开发预告（急需建议）
+- 📅 流年/大运推演视图
+- 🧠 AI 智能断语生成（辅助学习用）
+- 🗂 命例训练集推荐与对照分析
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+---
+![wechatQR](https://github.com/user-attachments/assets/eed84d09-ad05-42de-aa45-f9364cc92ec4)|<img width="324" alt="微信图片_20250620101556" src="https://github.com/user-attachments/assets/a1c83350-84ab-4a10-a047-fb7d5008fd8f" />
+
+
+
+点个关注喵😸 永雏塔菲谢谢你喵😽
+---
+## ☕ 如果你觉得这个项目对你有帮助，可以请我喝杯咖啡～
+## ⚡ 此项目完全开源，仅作为感谢/打赏，不构成购买义务。～
+
+微信 | 支付宝
+:--:|:--:
+![wechat_qr](https://github.com/user-attachments/assets/0ef07839-b60c-41d7-9654-3d5c523a278e)|![alipay_qr](https://github.com/user-attachments/assets/1ac58eed-22eb-402a-a8d0-f7848e266c29)
+
+
